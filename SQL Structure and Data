@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2015 at 02:19 AM
+-- Generation Time: Apr 02, 2015 at 02:41 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -15044,7 +15044,7 @@ CREATE TABLE IF NOT EXISTS `song` (
   `albumId` varchar(128) NOT NULL,
   `minutes` float DEFAULT NULL,
   `trackNum` int(11) NOT NULL,
-  PRIMARY KEY (`songId`)
+  PRIMARY KEY (`songId`,`albumId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -20221,3 +20221,4 @@ CREATE TABLE IF NOT EXISTS `venue` (
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
